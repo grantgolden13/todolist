@@ -6,18 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ba774010ff.js"></script>
 </head>
 <body>
     <div class="container">
-        <aside class="projects-container">
-            Projects
-            <hr>
+        <aside class="proj-container">
+            <h2 class="proj-header">Projects</h2>
+            <div class="divider"></div>
             <div class="projects">
-                Project 1
+                <div class="project">
+                    <span>Project 1</span>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="add-proj-cont">
+                <button class="add-proj"><span class="gold">+</span> Add Project</button>
             </div>
         </aside>
         <div class="todo-container">
-            Todos
+            <div class="todo-header flex">
+                <h2 class="proj-name">Project Name</h2>
+                <div>Edit</div>
+            </div>
+            <div class="divider"></div>
+            <div class="todos">
+                <div class="todo flex">
+                    <div class="check">test</div>
+                    <span class="todo-name">Default Task</span>
+                    <div class="todo-date">This Friday</div>
+                    <button>Edit</button>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
         </div>
     </div>
 </body>
