@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #2f3437;
 }
 
 aside {
@@ -38,7 +38,7 @@ aside {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
     gap: 64px;
 }
 
@@ -49,22 +49,36 @@ aside {
     background-color: hsla(0, 0%, 100%, 0.4)
 }
 
-.add-proj {
+.add-proj,
+.add-todo {
     background-color: transparent;
     justify-self: flex-end;
     padding: 8px;
     font-size: 1.5rem;
 }
 
-.add-proj:hover {
+.add-proj:hover,
+.add-todo:hover {
     background-color: #444a4d;
     transform: scale(1.25);
+}
+
+.projects,
+.todos {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
 }
 
 .project {
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
+    padding: 8px;
+}
+
+.project:hover {
+    background-color: hsla(0, 0%, 100%, 0.4);
 }
 
 .fa-trash-can:hover {
@@ -86,4 +100,31 @@ aside {
     border: 1px solid hsla(0, 0%, 100%, 0.4);
     border-radius: 5px;
     padding: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.left,
+.right,
+.edit {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.edit > span:hover {
+    text-decoration: underline;
+}
+
+.check {
+    border: 1px solid hsla(0, 0%, 100%, 0.4);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.fa-pencil:hover {
+    transform: scale(1.25);
 }
