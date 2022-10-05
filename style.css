@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 48px;
+}
