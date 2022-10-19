@@ -27,7 +27,7 @@ aside {
 }
 
 .proj-header,
-.proj-name {
+.todo-header {
     font-size: 3rem;
 }
 
@@ -61,6 +61,7 @@ aside {
 .add-todo:hover {
     background-color: #444a4d;
     transform: scale(1.25);
+    cursor: pointer;
 }
 
 .projects,
@@ -84,6 +85,7 @@ aside {
 .fa-trash-can:hover {
     transform: scale(1.25);
     color: red;
+    cursor: pointer;
 }
 
 .flex {
@@ -115,6 +117,7 @@ aside {
 
 .edit > span:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .check {
@@ -127,4 +130,65 @@ aside {
 
 .fa-pencil:hover {
     transform: scale(1.25);
+    cursor: pointer;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-proj-modal {
+    border: 2px solid hsla(0, 0%, 100%, 0.4);
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #3f4447;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+
+.show {
+    visibility: visible;
+}
+
+.big {
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsla(0,0%,100%,.8)
+}
+
+.proj-name {
+    height: 48px;
+    color: black;
+    font-size: 2rem;
+}
+
+.btn-cont {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.create-proj, 
+.cancel {
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-proj {
+    color: white;
+    background-color: #00cd00;
+}
+
+.cancel {
+    color: white;
+    background-color: red;
 }
