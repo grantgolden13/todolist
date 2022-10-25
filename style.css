@@ -133,6 +133,7 @@ aside {
     cursor: pointer;
 }
 
+.todo-modal-container,
 .modal-container {
     width: 100vw;
     height: 100vh;
@@ -144,6 +145,7 @@ aside {
     align-items: center;
 }
 
+.add-todo-modal,
 .add-proj-modal {
     border: 2px solid hsla(0, 0%, 100%, 0.4);
     border-radius: 10px;
@@ -153,6 +155,7 @@ aside {
     flex-flow: column nowrap;
     gap: 16px;
 }
+
 
 .show {
     visibility: visible;
@@ -164,6 +167,13 @@ aside {
     color: hsla(0,0%,100%,.8)
 }
 
+.med {
+    font-size: 2rem;
+    color: hsla(0,0%,100%,.8);
+}
+
+.todo-date,
+.todo-name,
 .proj-name {
     height: 48px;
     color: black;
@@ -175,6 +185,7 @@ aside {
     justify-content: space-around;
 }
 
+.create-todo,
 .create-proj, 
 .cancel {
     font-size: 24px;
@@ -183,6 +194,8 @@ aside {
     cursor: pointer;
 }
 
+.create-todo,
+.submit,
 .create-proj {
     color: white;
     background-color: #00cd00;
@@ -191,4 +204,19 @@ aside {
 .cancel {
     color: white;
     background-color: red;
+}
+
+.todo {
+    gap: 48px;
+    justify-content: space-between;
+}
+
+.submit {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.btn-div {
+    display: flex;
+    gap: 24px;
 }

@@ -7,10 +7,10 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ba774010ff.js"></script>
-    <script defer src="script.js"></script>
+    <script defer src="newscript.js"></script>
 </head>
 <body>
-    <div class="modal-container">
+    <div class="center modal-container">
         <div class="add-proj-modal">
             <h2 class="big">Project Name</h2>
             <input class="proj-name" type="text" placeholder="Name of Project">
@@ -20,15 +20,25 @@
             </div>
         </div>
     </div>
+    <div class="todo-modal-container">
+        <div class="add-todo-modal">
+            <label class="med" for="todo-name">New Todo: <input class="todo-name" type="text" placeholder="e.g. Clean the house"></label>
+            <label class="med" for="todo-date">Due Date: <input class="todo-date" type="date"></label>
+            <div class="btn-cont">
+                <button class="create-todo">Add Todo</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <aside class="proj-container">
             <h2 class="proj-header">Projects</h2>
             <div class="divider"></div>
             <div class="projects">
-                <div class="project">
+                <!-- <div class="project">
                     <span>Project 1</span>
                     <i class="fa-regular fa-trash-can"></i>
-                </div>
+                </div> -->
             </div>
             <div class="add-proj-cont">
                 <button class="add-proj"><span class="gold">+</span> Add Project</button>
@@ -36,7 +46,7 @@
         </aside>
         <div class="todo-container">
             <div class="todo-header-cont flex">
-                <h2 class="todo-header">Project Name</h2>
+                <h2 class="todo-header"></h2>
                 <div class="edit">
                     <span>Edit</span>
                     <i class="fa-solid fa-pencil"></i>
@@ -44,7 +54,7 @@
             </div>
             <div class="divider"></div>
             <div class="todos">
-                <div class="todo flex">
+                <!-- <div class="todo flex">
                     <div class="left">
                         <div class="check"></div>
                         <span class="todo-name">Default Todo</span>
@@ -65,7 +75,7 @@
                         <i class="fa-solid fa-pencil"></i>
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
-                </div>
+                </div> -->
                 <div class="add-proj-cont">
                     <button class="add-todo"><span class="gold">+</span> Add Todo</button>
                 </div>
